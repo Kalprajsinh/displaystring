@@ -1,0 +1,30 @@
+#include <stdio.h>
+struct student
+ {
+    char x[50];
+    int n;
+    float p;
+} s;
+
+int main() {
+    printf("Enter information:\n");
+    printf("Enter Book name: ");
+    fgets(s.x,sizeof(s.x), stdin);
+
+    printf("Enter number: ");
+    scanf("%d", &s.n);
+    printf("Enter price: ");
+    scanf("%f", &s.p);
+
+    printf("Book Information:\n");
+    printf("Book Name: ");
+    printf("%s", s.x);
+    printf("number: %d\n", s.n);
+    printf("price: %.1f\n", s.p);
+
+    return 0;
+}
+
+
+
+
